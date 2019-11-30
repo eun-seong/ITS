@@ -5,6 +5,7 @@ public class PersonalData {
     private String member_id;
     private String member_status;
 
+
     public String getMember_id() {
         return member_id;
     }

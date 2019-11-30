@@ -17,17 +17,12 @@
             android:text="가능"
             android:layout_toLeftOf="@+id/bt_0"
             android:layout_centerVertical="true"/>
-        <TextView
-            android:id="@+id/tv1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/bt1"
-            android:text="text1"/>
 
         <Button
             android:id="@+id/bt_0"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
+            android:background="@color/colorGray"
             android:clickable="false"
             android:text="  "
             android:layout_centerInParent="true"/>
@@ -40,20 +35,21 @@
             android:text="가능"
             android:layout_toRightOf="@+id/bt_0"
             android:layout_centerVertical="true"/>
-        <TextView
-            android:id="@+id/tv2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tv1"
-            android:text="text2"/>
 
         <WebView
             android:id="@+id/wb"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@+id/bt_0"
+            android:layout_height="0dp"
             android:paddingBottom="10dp"/>
-         <Button
+
+        <TextView
+            android:text="hello_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Textview"
+            android:layout_below="@+id/bt1"/>
+
+        <Button
             android:id="@+id/bt_clear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,8 +69,7 @@
             android:layout_weight="6"
             android:layout_margin="5dp"
             android:padding="5dp"
-            android:id="@+id/listView_main_list"
-            android:layout_below="@+id/tv2"/>
+            android:id="@+id/listView_main_list"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -84,5 +79,14 @@
             android:padding="5dp"
             android:id="@+id/textView_main_result"
             android:layout_below="@+id/listView_main_list"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Run"
+            android:id="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:onClick="OnButtonClicked"/>
 
 </RelativeLayout>

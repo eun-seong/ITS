@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.CustomViewHolder> {
 
-    private ArrayList<PersonalData> mList = null;
+    public ArrayList<PersonalData> mList = null;
     private Activity context = null;
     private static final String TAG = "EUN_DEBUG";
 
@@ -44,6 +44,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.CustomViewHo
         Log.d(TAG, "onCreateViewHolder");
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_list, null);
         CustomViewHolder viewHolder = new CustomViewHolder(view);
+
 
         return viewHolder;
     }
